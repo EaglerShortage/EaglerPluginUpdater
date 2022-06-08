@@ -1,4 +1,4 @@
-package tech.nully.PluginInstaller;
+package tech.nully.PluginUpdater;
 
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.Plugin;
