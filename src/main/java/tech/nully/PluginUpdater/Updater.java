@@ -8,6 +8,8 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 
 import static org.bukkit.Bukkit.getServer;
+
+import org.bukkit.plugin.Plugin;
 import tech.nully.PluginInstaller.Main;
 
 public class Updater {
@@ -16,7 +18,8 @@ public class Updater {
                 .toURL().openStream();
         File f = new File(Main.getInstance().getDataFolder().getParent() + "/EaglerPluginInstaller.jar");
         Files.copy(in, f.toPath(), StandardCopyOption.REPLACE_EXISTING);
-        getServer().getPluginManager().disablePlugin(Main.getInstance());
-        getServer().getPluginManager().enablePlugin(Main.getInstance());
+        Plugin instance = Main.getInstance();
+        getServer().getPluginManager().disablePlugin(instance);
+        getServer().getPluginManager().enablePlugin(instance);
     }
 }
