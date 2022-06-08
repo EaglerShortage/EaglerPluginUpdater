@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>tech.nully</groupId>
-    <artifactId>EaglerPluginInstaller</artifactId>
-    <version>1.0.0</version>
+    <artifactId>EaglerPluginUpdater</artifactId>
+    <version>1.0.9</version>
     <packaging>jar</packaging>
 
     <name>EaglerPluginInstaller</name>
 
-    <description>A plugin made to install other plugins from an online repository to eaglercraft servers with a single command</description>
+    <description>An updater for EaglerPluginInstaller</description>
     <url>nully.tech</url>
     <properties>
         <java.version>1.8</java.version>
@@ -28,6 +28,11 @@
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>com.github.EaglerMaven</groupId>
+            <artifactId>PluginInstaller</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <dependency>
             <groupId>com.github.EaglerMaven</groupId>
             <artifactId>craftbukkit</artifactId>
