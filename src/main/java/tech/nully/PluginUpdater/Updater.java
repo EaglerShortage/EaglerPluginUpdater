@@ -8,6 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 
 import static org.bukkit.Bukkit.getServer;
+import tech.nully.PluginInstaller.Main;
 
 public class Updater {
     public static void UpdateInstaller() throws IOException {
@@ -15,7 +16,7 @@ public class Updater {
                 .toURL().openStream();
         File f = new File(Main.getInstance().getDataFolder().getParent() + "/EaglerPluginInstaller.jar");
         Files.copy(in, f.toPath(), StandardCopyOption.REPLACE_EXISTING);
-        getServer().getPluginManager().disablePlugin(tech.nully.PluginInstaller.Main.getInstance());
-        getServer().getPluginManager().enablePlugin(tech.nully.PluginInstaller.Main.getInstance());
+        getServer().getPluginManager().disablePlugin(Main.getInstance());
+        getServer().getPluginManager().enablePlugin(Main.getInstance());
     }
 }
