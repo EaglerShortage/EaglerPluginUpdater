@@ -1,6 +1,6 @@
 name: EaglerPluginUpdater
 version: 1.0.9
-main: tech.nully.PluginInstaller.Main
+main: tech.nully.PluginUpdater.Main
 prefix: [EaglerPluginUpdater]
 depend:
     - EaglerPluginInstaller
