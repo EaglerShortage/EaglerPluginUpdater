@@ -18,7 +18,7 @@ public class Main extends JavaPlugin {
         Bukkit.getServer().getConsoleSender().sendMessage("--------------------------------------------");
         Bukkit.getServer().getConsoleSender().sendMessage("--------------------------------------------");
         Bukkit.getServer().getConsoleSender().sendMessage(
-                ChatColor.GREEN + "[EaglerPluginUpdater]" + ChatColor.AQUA + " EaglerPluginUpdater V1.1.0 is now Enabled! :D");
+                ChatColor.GREEN + "[EaglerPluginUpdater]" + ChatColor.AQUA + " EaglerPluginUpdater V1.1.2 is now Enabled! :D");
         Bukkit.getServer().getConsoleSender().sendMessage("You do not need to do anything, this plugin will automatically update your PluginUpdater on startup");
         Bukkit.getServer().getConsoleSender().sendMessage("--------------------------------------------");
         Bukkit.getServer().getConsoleSender().sendMessage("--------------------------------------------");
@@ -29,7 +29,7 @@ public class Main extends JavaPlugin {
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage(
-                ChatColor.GREEN + "[EaglerPluginUpdater]" + ChatColor.AQUA + " EaglerPluginUpdater V1.1.0 is now Disabled! D:");
+                ChatColor.GREEN + "[EaglerPluginUpdater]" + ChatColor.AQUA + " EaglerPluginUpdater V1.1.2 is now Disabled! D:");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
         getServer().getConsoleSender().sendMessage("--------------------------------------------");
     }
